@@ -1,0 +1,34 @@
+.hero-ascii {
+  position: absolute;
+  z-index: 0;
+  top: -120px;
+  left: calc(50% + 285px);
+  width: min(78vw, 820px);
+  aspect-ratio: 1;
+  pointer-events: none;
+  opacity: 0.42;
+  transform: translateX(-50%);
+  mix-blend-mode: screen;
+  mask-image: radial-gradient(ellipse 66% 65% at 51% 49%, #000 15%, rgba(0, 0, 0, 0.78) 52%, transparent 96%);
+}
+
+.hero-dots {
+  opacity: 0.16;
+}
+
+@media (max-width: 900px) {
+  .hero-ascii {
+    top: 32px;
+    left: 50%;
+    width: min(105vw, 680px);
+    opacity: 0.28;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-ascii {
+    top: 110px;
+    width: min(120vw, 540px);
+    opacity: 0.18;
+  }
+}
