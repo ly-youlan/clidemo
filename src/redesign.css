@@ -87,7 +87,10 @@ body {
 .hero-copy-wrap h1 em {
   display: inline-block;
   color: #fff;
-  text-decoration-color: rgba(183, 140, 255, .9);
+  -webkit-text-decoration: underline 3px var(--accent);
+  text-decoration: underline 3px var(--accent);
+  text-underline-offset: 9px;
+  font-style: italic;
   animation: fade-in .25s ease;
 }
 
